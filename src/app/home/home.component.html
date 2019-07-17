@@ -1,0 +1,31 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+  <a class="navbar-item">
+  <img src="../../assets/images/cli.png">
+  </a>
+  </div>
+  <div class="navbar-menu">
+  <div class="navbar-end">
+  <a class="navbar-item " routerLink="/" >
+  Dashboard
+  </a>
+  <a class="navbar-item " routerLink="/products" >
+  Products
+  </a>
+  <a class="navbar-item " routerLink="/settings" >
+  Settings
+  </a>
+  <a class="navbar-item" (click)="logout()">
+  Logout
+  </a>
+  </div>
+  </div>
+  </nav>
+  
+  <div class="content">
+  <section class="section">
+  <div class="container mainBlock">
+  <router-outlet></router-outlet>
+  </div>
+  </section>
+  </div>
